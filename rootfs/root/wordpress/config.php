@@ -28,4 +28,8 @@ if (!defined('ABSPATH')) {
   define('ABSPATH', dirname(__FILE__) . '/');
 }
 
+if (file_exists(ABSPATH . 'wp-custom.php')) {
+  require_once(ABSPATH . 'wp-custom.php');
+}
+
 require_once(ABSPATH . 'wp-settings.php');
