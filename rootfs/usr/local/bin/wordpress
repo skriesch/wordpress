@@ -41,10 +41,10 @@ function copy_config {
 
 function copy_mailer {
   echo "Copying mailer..."
-  mkdir -p /var/www/wp-content/mu-plugins
+  mkdir -p /var/www/wordpress/wp-content/mu-plugins
   envsubst \
     '${WORDPRESS_MAIL_HOST} ${WORDPRESS_MAIL_PORT} ${WORDPRESS_MAIL_USERNAME} ${WORDPRESS_MAIL_PASSWORD} ${WORDPRESS_MAIL_SECURITY} ${WORDPRESS_MAIL_FROM} ${WORDPRESS_MAIL_NAME}' \
-      < /root/wordpress/mail.php > /var/www/wp-content/mu-plugins/mailer.php
+      < /root/wordpress/mail.php > /var/www/wordpress/wp-content/mu-plugins/mailer.php
 }
 
 function chown_files {
