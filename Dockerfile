@@ -24,6 +24,7 @@ RUN apt-get update -y && \
     php-mbstring \
     php-soap \
     php-apcu \
+    php-ldap \
     mysql-client \
     gettext-base && \
   apt-get clean && \
