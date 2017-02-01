@@ -7,6 +7,9 @@ declare -x WORDPRESS_DOMAIN
 declare -x WORDPRESS_DEBUG
 [[ -z "${WORDPRESS_DEBUG}" ]] && WORDPRESS_DEBUG="false"
 
+declare -x WORDPRESS_DB_PREFIX
+[[ -z "${WORDPRESS_DB_PREFIX}" ]] && WORDPRESS_DB_PREFIX="wp_"
+
 declare -x WORDPRESS_DB_HOST
 [[ -z "${WORDPRESS_DB_HOST}" ]] && WORDPRESS_DB_HOST="mariadb"
 

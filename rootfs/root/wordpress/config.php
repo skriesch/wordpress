@@ -1,6 +1,6 @@
 <?php
 
-$table_prefix  = 'wp_';
+$table_prefix  = '${WORDPRESS_DB_PREFIX}';
 
 define('DB_NAME', '${WORDPRESS_DB_NAME}');
 define('DB_USER', '${WORDPRESS_DB_USERNAME}');
