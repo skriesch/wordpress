@@ -28,7 +28,7 @@ RUN apt-get update -y && \
     gettext-base && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /etc/apache2/sites-available/default-ssl.conf && \
-  a2enmod rewrite headers env dir mime ssl && \
+  a2enmod rewrite headers env dir mime ssl expires && \
   mkdir -p /var/www/wordpress /mnt/data/files /mnt/data/config /mnt/data/certs && \
   chown -R www-data:www-data /var/www/wordpress /mnt/data && \
   chsh -s /bin/bash www-data
