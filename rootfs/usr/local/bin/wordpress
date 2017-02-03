@@ -88,8 +88,6 @@ function cert_exists {
   fi
 }
 
-env | grep WORDPRESS | sort
-
 create_folders
 wait_database
 install_wordpress
