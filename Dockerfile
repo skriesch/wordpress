@@ -44,6 +44,7 @@ RUN curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_V
   chown -R www-data:www-data /usr/src/wordpress
 
 COPY rootfs /
+WORKDIR /var/www/wordpress
 
 ARG VERSION
 ARG BUILD_DATE
