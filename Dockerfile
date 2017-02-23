@@ -10,6 +10,7 @@ ENTRYPOINT ["/usr/local/bin/entrypoint"]
 CMD ["/usr/local/bin/wordpress"]
 
 RUN apt-get update -y && \
+  apt-get upgrade -y && \
   apt-get install -y \
     apache2 \
     libapache2-mod-php \
