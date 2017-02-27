@@ -27,7 +27,8 @@ RUN apt-get update -y && \
     php-apcu \
     php-ldap \
     mysql-client \
-    gettext-base && \
+    gettext-base \
+    git-core && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /etc/apache2/sites-available/default-ssl.conf && \
   a2enmod rewrite headers env dir mime ssl expires && \
