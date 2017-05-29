@@ -92,6 +92,7 @@ create_folders
 wait_database
 install_wordpress
 copy_config
+copy_mailer
 chown_files
 generate_certs
 start_services
