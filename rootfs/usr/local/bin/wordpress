@@ -44,7 +44,7 @@ function copy_mailer {
   mkdir -p /var/www/wordpress/wp-content/mu-plugins
   envsubst \
     '${WORDPRESS_MAIL_HOST} ${WORDPRESS_MAIL_PORT} ${WORDPRESS_MAIL_USERNAME} ${WORDPRESS_MAIL_PASSWORD} ${WORDPRESS_MAIL_SECURITY} ${WORDPRESS_MAIL_FROM} ${WORDPRESS_MAIL_NAME}' \
-      < /root/wordpress/mail.php > /var/www/wordpress/wp-content/mu-plugins/mailer.php
+      < /root/wordpress/mailer.php > /var/www/wordpress/wp-content/mu-plugins/mailer.php
 }
 
 function chown_files {
