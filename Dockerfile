@@ -26,6 +26,7 @@ RUN apt-get update -y && \
     php-soap \
     php-apcu \
     php-ldap \
+    php-imap \
     mysql-client \
     gettext-base \
     git-core && \
