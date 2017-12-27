@@ -25,6 +25,7 @@ RUN apt-get update -y && \
     php-mbstring \
     php-soap \
     php-apcu \
+    php-opcache \
     php-ldap \
     php-imap \
     mysql-client \
